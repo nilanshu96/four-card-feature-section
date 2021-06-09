@@ -3,6 +3,7 @@
 .four-card-feature-section {
   margin: 2rem;
   margin-top: 5rem;
+  min-width: 19rem;
   font-family: config.$font-family-poppins;
 
   & > :is(h1, h2, p) {
@@ -14,9 +15,9 @@
     color: config.$very-dark-blue;
     margin-block-end: 0rem;
     font-size: 1.5rem;
-    
+
     @include config.pc {
-        font-size: 2.25rem;
+      font-size: 2.25rem;
     }
   }
 
@@ -26,20 +27,17 @@
     font-size: 1.5rem;
 
     @include config.pc {
-        font-size: 2.25rem;
-        margin-block-end: 1rem;
+      font-size: 2.25rem;
+      margin-block-end: 1rem;
     }
     color: config.$very-dark-blue;
   }
 
   & > p {
     color: config.$grayish-blue;
-
-    @include config.pc {
-        max-width: 31.5rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    max-width: 31.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-grid {
@@ -57,11 +55,12 @@
     max-width: max-content;
 
     @include config.pc {
-        grid-template-areas: "cyan red blue"
+      grid-template-areas:
+        "cyan red blue"
         "cyan orange blue";
-        gap: 2em;
-        margin-top: 4rem;
-        grid-template-columns: 350px 350px 350px;
+      gap: 2em;
+      margin-top: 4rem;
+      grid-template-columns: 350px 350px 350px;
     }
   }
 
@@ -75,7 +74,7 @@
     align-self: center;
 
     @include config.pc {
-        padding: 2rem;
+      padding: 2rem;
     }
 
     & > h3 {
