@@ -2,7 +2,8 @@
 
 .four-card-feature-section {
   margin: 2rem;
-  margin-top: 5rem;
+  margin-top: 0;
+  padding-top: 5rem;
   min-width: 19rem;
   font-family: config.$font-family-poppins;
 
@@ -13,7 +14,8 @@
   & > h1 {
     font-weight: config.$font-weight-extra-light;
     color: config.$very-dark-blue;
-    margin-block-end: 0rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
     font-size: 1.5rem;
 
     @include config.pc {
