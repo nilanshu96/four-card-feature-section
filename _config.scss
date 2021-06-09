@@ -27,6 +27,11 @@ html, body {
     box-sizing: border-box;
 }
 
+body {
+    font-size: $body-font-size;
+    background-color: $very-light-gray;
+}
+
 main {
     min-height: 90vh;
 }

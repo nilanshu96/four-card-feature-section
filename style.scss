@@ -1,1 +1,68 @@
 @use './config';
+
+.four-card-feature-section {
+
+    margin: 2rem;
+    margin-top: 5rem;
+    font-family: config.$font-family-poppins;
+
+    & > :is(h1, h2, p) {
+        text-align: center;
+    }
+
+    & > h1 {
+        font-weight: config.$font-weight-regular;
+        color: config.$very-dark-blue;
+        margin-block-end: 0rem;
+        font-size: 1.5rem;
+    }
+
+    & > h2 {
+        font-weight: config.$font-weight-semi-bold;
+        margin-block-start: 0;
+        font-size: 1.5rem;
+    }
+
+    & > p {
+        color: config.$grayish-blue;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-auto-rows: auto;
+        row-gap: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: visible;
+        margin-top: 5rem;
+    }
+
+    .card {
+        border-top: 0.3rem solid config.$cyan;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        justify-self: center;
+        box-shadow: 0 0.5rem 1rem rgb(0,0,0,0.2);
+
+        & > h3 {
+            font-weight: config.$font-weight-semi-bold;
+        }
+
+        & > img {
+            margin-left: auto;
+            display: block;
+        }
+
+        &:nth-child(2) {
+            border-color: config.$red;
+        }
+
+        &:nth-child(3) {
+            border-color: config.$orange;
+        }
+
+        &:nth-child(4) {
+            border-color: config.$blue;
+        }
+    }
+}
